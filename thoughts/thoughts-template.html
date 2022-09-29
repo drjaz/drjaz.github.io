@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>The Title of Thought 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+    <link rel="stylesheet" href="../style.css" />
+    <script type="text/javascript" src="../js.js"></script>
+
+</head>
+<body class="thoughts">
+    <header>
+        <nav>
+            <ul>
+                <li><a class="nav-link" href="../index.html">HELLO</a></li>
+                <li><a class="nav-link" href="../thoughts/index.html">Thoughts</a></li>
+                <li><a class="nav-link" href="../things/index.html">Things</a></li>
+                <li><a class="nav-link" href="../me/me.html">Me</a></li>
+                <li><a class="nav-link" onclick="runme()" href="#">Random</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <article>
+            <h1>The Title of Thought One</h1>
+            <div class="post-meta">
+                <span class="post-meta">
+                    created:
+                    <time itemprop="pubdate" datetime="2021-02-08"> 8 Feb 2021; </time>
+                    modified:
+                    <time itemprop="pubdate" datetime="2021-02-08"> 10 Feb 2021</time>
+                </span>
+            </div>
+            <section>
+                <h2>This is a Section Heading</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, magni ullam magnam rerum mollitia
+                    dolorum, quae labore velit neque quia sapiente aliquam, voluptates recusandae facere molestiae.
+                    Pariatur dolor repellat harum!
+                </p>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto vero, quas a asperiores ipsam earum
+                    quaerat, reiciendis, dignissimos officia rerum quae nisi sunt dolores commodi dolorem temporibus
+                    voluptatibus non maxime.
+                </p>
+
+                <h3>This is a Low-Level Heading</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum reiciendis minima illo rerum harum
+                    mollitia consequuntur praesentium officiis perspiciatis numquam eaque molestiae omnis similique,
+                    minus corrupti blanditiis non nobis tenetur?
+                </p>
+                <p class="nl">Below is an example of a blockquote with a footer at the end. Also, to started a new
+                    subsection paragraph without text-indent, use <code>class="nl"</code> (new line).</p>
+                <blockquote>
+                    <p>
+                        [It is] notable that the Feynman lectures (3 volumes) write about all of physics in 1800 pages,
+                        using only 2 levels of hierarchical headings: chapters and A-level heads in the text. It also
+                        uses the methodology of <em>sentences</em> which then cumulate sequentially into
+                        <em>paragaphs</em>, rather than the grunts of bullet points. Undergraduate Caltech physics is
+                        very complicated material, but it didn’t require an elaborate hierarchy to organize.
+                    </p>
+                    <footer>
+                        <a href="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000hB">Edward Tufte, forum
+                            post, ‘Book design: advice and examples’ thread</a>
+                    </footer>
+                </blockquote>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet at dolores itaque ipsam ut. Voluptatem,
+                    ad asperiores fugit eius deleniti a obcaecati est illo ex ratione velit non placeat laboriosam!</p>
+            </section>
+            <section>
+                <h2>Epigraphs</h2>
+                <div class="epigraph">
+                    <blockquote>
+                        <p>
+                            The English language . . . becomes ugly and inaccurate because our thoughts are foolish, but
+                            the slovenliness of our language makes it easier for us to have foolish thoughts.
+                        </p>
+                        <footer>George Orwell, “Politics and the English Language”</footer>
+                    </blockquote>
+                </div>
+            </section>
+            <section>
+                <h2>Sidenotes</h2>
+                <p>
+                Sidenotes consist of two elements: a superscript reference number that goes inline with the text, and a sidenote with content. 
+                <label for="sn-sidenote-example" class="margin-toggle sidenote-number"></label>
+                <input type="checkbox" id="sn-sidenote-example" class="margin-toggle"/>
+                <span class="sidenote">
+                    Just like this! This is some filler text so that I can see how wide the sidenote element is. 
+                </span>
+                </p>
+                <p>
+                    And this is a margin note, which does not have numberings. 
+                    <label for="mn-demo" class="margin-toggle">&#x25bc;</label>
+                    <input type="checkbox" id="mn-demo" class="margin-toggle"/>
+                    <span class="marginnote">
+                        This is a margin note. Notice there isn’t a number preceding the note.
+                    </span>
+                </p>
+            </section>
+
+            <section>
+                <h2>Figures</h2>
+                <p>
+                    Figures should try to use the figure element, which by default are constrained to the main column. Don’t wrap figures in a paragraph tag. Any label or margin note goes in a regular margin note inside the figure. For example, most of the time one should introduce a figure directly into the main flow of discussion, like so:
+                </p>
+                <figure>
+                    <label for="mn-exports-imports" class="margin-toggle">&#x25bc;</label>
+                    <input type="checkbox" id="mn-exports-imports" class="margin-toggle">
+                    <span class="marginnote">From Edward Tufte, <em>Visual Display of Quantitative Information</em>, page 92.</span>
+                    <img src="img/tufte-ex.png" alt="Exports and Imports to and from Denmark &amp; Norway from 1700 to 1780">
+                </figure>
+                <p> 
+                    <label for="mn-fig-1" class="margin-toggle">&#x25bc;</label>
+                    <input type="checkbox" id="mn-fig-1" class="margin-toggle">
+                    <span class="marginnote"><img src="tufte/img/rhino.png" alt="Image of a Rhinoceros">F.J. Cole, “The History of Albrecht Dürer’s Rhinoceros in Zooological Literature,” <em>Science, Medicine, and History: Essays on the Evolution of Scientific Thought and Medical Practice</em> (London, 1953), ed. E. Ashworth Underwood, 337-356. From page 71 of Edward Tufte’s <em>Visual Explanations</em>.</span>
+
+                    But tight integration of graphics with text is central to Tufte’s work even when those graphics are ancillary to the main body of a text. In many of those cases, a margin figure may be most appropriate. To place figures in the margin, just wrap an image (or whatever) in a margin note inside a p tag, as seen to the right of this paragraph. 
+                </p>
+                <p>If you need a full-width figure, give it the <code>fullwidth</code> class. Make sure that’s inside an <code>article</code>, and it will take up (almost) the full width of the screen. This approach is demonstrated below using Edward Tufte’s English translation of the Napoleon’s March data visualization. From <em>Beautiful Evidence</em>, page 122-124.</p>
+                <figure class="fullwidth">
+                  <img src="tufte/img/napoleons-march.png" alt="Figurative map of the successive losses of the French Army in the Russian campaign, 1812-1813" />
+                </figure>
+            </section>
+        </article>
+    </div>
+</body>
+</html> 
